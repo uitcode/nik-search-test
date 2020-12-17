@@ -1,0 +1,51 @@
+<section id="login">
+  <div class="contents">
+    <div class="login-area">
+      <div id="logo">
+        <img src="assets/images/background/logo.svg" alt="logo">
+      </div>
+      <form nz-form [formGroup]="validateForm" class="login-form" (ngSubmit)="submitForm()">
+        <nz-form-item>
+          <nz-form-control nzErrorTip="Please input your username!">
+            <nz-input-group>
+              <label>
+                <input type="text" nz-input nzSize="large" formControlName="userName" placeholder="ユーザー名" />
+              </label>
+            </nz-input-group>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-control nzErrorTip="Please input your Password!">
+            <nz-input-group>
+              <label>
+                <input type="password" nz-input nzSize="large" formControlName="password" placeholder="ユーザー名" />
+              </label>
+            </nz-input-group>
+          </nz-form-control>
+        </nz-form-item>
+        <div nz-row [nzGutter]="[16, 24]" class="login-form-bottom">
+          <div nz-col nzFlex="auto" class="gutter-row">
+            <label nz-checkbox [(ngModel)]="checked" formControlName="remember">
+              <span>ログイン状態を保持</span>
+            </label>
+          </div>
+          <div nz-col nzFlex="auto">
+            <a class="login-form-forgot">パスワードを忘れた場合はこちら</a>
+          </div>
+        </div>
+        <button id="btn-login" nz-button nzType="primary" nzSize="large" nzBlock>ログイン</button>
+        <a class="register">新規登録はこちら</a>
+      </form>
+      <div id="btns-sns-login">
+        <button nz-button id="login-google" nzSize="large" nzType="default" nzBlock>
+          <img src="assets/images/icon/google.svg" alt="google">
+          Googleでログイン
+        </button>
+        <button nz-button id="login-microsoft" nzSize="large" nzType="default" nzBlock>
+          <img src="assets/images/icon/windows.svg" alt="microsoft">
+          Microsoftでログイン
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
