@@ -1,0 +1,115 @@
+
+::ng-deep {
+  .ant-modal-content {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .ant-layout-header {
+    height: fit-content;
+    line-height: inherit;
+  }
+
+  .ant-modal-footer {
+    text-align: center;
+  }
+
+  .ant-table {
+    font-size: 0.8rem;
+  }
+
+  .ant-table table {
+    border-right: 1px solid rgb(0 159 232);
+    border-bottom: 1px solid rgb(0 159 232);
+    .ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+      border: solid rgb(0 159 232);
+      border-width: 1px 1px 0 1px;
+      padding: 4px 8px;
+      color: rgb(84 84 84);
+      font-weight: 300;
+      text-align: center;
+    }
+  }
+
+  .ant-table-thead > tr > th {
+    background-color: rgba(0, 159, 232, 0.1);
+  }
+}
+
+.delivery-modal {
+  nz-layout {
+    padding: 20px 20px 0px;
+    background: rgb(255 255 255 / 0%);
+  }
+  nz-header,
+  nz-footer {
+    background: #FFFFFF;
+    padding: 0;
+
+    li {
+      padding: 5px;
+    }
+
+    .title-step {
+      font-size: 0.8rem;
+      vertical-align: text-bottom;
+      margin-left: 10px;
+    }
+  }
+
+  nz-select {
+    width: 100%;
+  }
+
+  .sending-place {
+    line-height: 30px;
+    font-size: 0.8rem;
+  }
+
+  .action-section {
+    label {
+      width: 120px;
+      display: inline-flex;
+    }
+
+    & .-margin-b-5 {
+      margin-bottom: 5px;
+    }
+
+    & .-margin-b-12 {
+      margin-bottom: 12px;
+    }
+  }
+
+  nz-content {
+    background: aliceblue;
+    margin: 20px 0;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .result-item {
+      height: 200px;
+      background: white;
+      margin: 10px;
+
+      & .-text-center {
+        text-align: center;
+      }
+
+      &__badge {
+        display: inline-block;
+        font-size: 0.7rem;
+        color: rgb(255 255 255);
+        padding: 4px 8px;
+        background: rgb(0 159 232);
+        border-radius: 10px;
+        font-weight: bold;
+      }
+    }
+  }
+}
